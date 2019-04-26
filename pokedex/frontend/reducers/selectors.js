@@ -1,5 +1,7 @@
-const selectAllPokemon = (state) => {
+export const selectAllPokemon = (state) => {
     return Object.values(state.entities.pokemon);
 }
 
-export default selectAllPokemon;
+export const selectPokemonItem = (state, itemId) => {
+    return state.entities.items[itemId];
+}
